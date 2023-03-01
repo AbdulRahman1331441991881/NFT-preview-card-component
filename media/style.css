@@ -1,0 +1,17 @@
+.NFTpreviewcardcomponent{
+    width: 90%;
+    height: 550px;
+    margin: 50px auto;
+    background-color: rgb(20 38 62);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.NFTpreviewcardcomponent .end img{
+    width: 50px;
+    height: 50px;
+    margin-top:40px;
+    margin-left: 20px;
+
+}

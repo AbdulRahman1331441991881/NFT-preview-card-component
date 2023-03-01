@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.NFTpreviewcardcomponent{
+    width: 25%;
+    height: 550px;
+    margin: 50px auto;
+    background-color: rgb(20 38 62);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.NFTpreviewcardcomponent >.img{
+    width: 90%;
+    margin:  auto;
+    position: relative;
+    height:250px;
+}
+.NFTpreviewcardcomponent > .img > .img1,.NFTpreviewcardcomponent >.img > .img2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.NFTpreviewcardcomponent  > .img> .img1 >img{
+    width: 100%;
+    height: 100%;
+}
+.NFTpreviewcardcomponent >.img > .img2{
+    background:#00f;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    opacity: 0;
+    transition: all ease-in-out 1s;
+    -webkit-transition: all ease-in-out 1s;
+    -moz-transition: all ease-in-out 1s;
+    -ms-transition: all ease-in-out 1s;
+    -o-transition: all ease-in-out 1s;
+    cursor: pointer;
+}
+.NFTpreviewcardcomponent > .img > .img2 > img{
+    display: none;
+}
+.NFTpreviewcardcomponent .img .img2:hover{
+    opacity: .5;
+}
+.NFTpreviewcardcomponent .img .img2:hover img{
+    display: flex;
+}
+.NFTpreviewcardcomponent .Equi,.NFTpreviewcardcomponent .end{
+    width: 100%;
+    height: 120px;
+
+}
+.NFTpreviewcardcomponent .Equi h1{
+    padding-left: 30px;
+    color: #fff;
+    font-size:1.8em;
+    
+}
+.NFTpreviewcardcomponent .Equi p{
+    padding-left:30px;
+    padding-top: 20px;
+    color: rgb(36, 160, 190);
+}
+.NFTpreviewcardcomponent .Equi .eth{
+    width:90%;
+    height: 50%;
+    margin: auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:10px;
+    position: relative;
+}
+.NFTpreviewcardcomponent .Equi .eth::before{
+    content: '';
+    width: 100%;
+    height:1px;
+    background-color: #aaa;
+    position: absolute;
+    bottom:-3px;
+    left: 0;
+}
+.NFTpreviewcardcomponent .Equi .eth div{
+    color: rgb(139 172 217);
+}
+.NFTpreviewcardcomponent .Equi .eth div img {
+ margin-top: 10px;
+}
+.NFTpreviewcardcomponent .end{
+    display:flex;
+    align-items:center;
+    justify-content: flex-start;
+}
+.NFTpreviewcardcomponent .end img{
+    width: 50px;
+    height: 50px;
+    margin-top:30px;
+    margin-left: 20px;
+
+}
+.NFTpreviewcardcomponent .end h3{
+    padding-top:40px ;
+    padding-right: 90px;
+    padding-left:10px;
+    color:rgb(139 172 217);
+}
+.NFTpreviewcardcomponent .end h3 span{
+    color: #fff;
+    font-size:15px;
+}
